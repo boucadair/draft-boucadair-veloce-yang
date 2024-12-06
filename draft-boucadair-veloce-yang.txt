@@ -107,6 +107,9 @@ Table of Contents
    *  The YANG module MUST NOT be inserted in the document; instead a
       link to the Github repository MUST be included.
 
+   *  Bis versions of the innitila RFC MAY be considered, to document
+      major changes or their rationale.
+
 4.  Security Considerations
 
    The same considerations discussed in Section 10 of [RFC8874] apply
