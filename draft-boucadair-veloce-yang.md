@@ -47,7 +47,7 @@ Guidance for writing  YANG modules are discussed in {{!I-D.ietf-netmod-rfc8407bi
 
 The following procedure is followed when a WG adopts (a document with) a YANG module:
 
-* A new repository is created following the procedure in {{Section 3.2 of !RFC8874}}.
+* A new repository MUST be created by the WG Chairs following the procedure in {{Section 3.2 of !RFC8874}}.
 * Contributing methods are those defined in {{Section 4 of !RFC8874}}.
 * The WG Chairs MUST seek in a timely manner after the adoption of the document for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
 * The YANG module MUST NOT be inserted in the document; instead a link to the Github repository MUST be included.
