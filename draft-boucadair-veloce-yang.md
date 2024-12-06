@@ -55,7 +55,7 @@ The following procedure is followed when a WG adopts a YANG module:
 
 * A new repository MUST be created by the WG Chairs following the procedure in {{Section 3.2 of !RFC8874}} to maintain the YANG Module, with the apprpriate CI/CD YANG validation in place. Other administrative polices are defined in {{!RFC8875}}. The same procedure for managing WG documents (e.g., assign editors) applies for managing YANG modules ({{Section 6.1 of !RFC2418}}). Refer also to {{Section 3.3 of !RFC8874}} for considerations related to granting WG participants write and administrators right.
 * Contributing methods to YANG module (including issues handling andd merge procedure) are similar to those defined in {{Section 4 of !RFC8874}}.
-* The WG Chairs MUST seek in a timely manner after the adoption of the document for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
+* The WG Chairs MUST seek in a timely manner after the adoption of the YANG module for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
 * The YANG module MUST NOT be inserted in the document; instead a link to the Github repository MUST be included.
 * Bis versions of the initial RFC MAY be considered to document major changes or their rationale. Such a decision is left to the WG Chairs.
 
