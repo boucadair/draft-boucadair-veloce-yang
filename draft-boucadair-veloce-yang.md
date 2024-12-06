@@ -73,3 +73,5 @@ This document has no IANA actions.
 {:numbered="false"}
 
 This draft is triggered by the discussion in NEMOPS IAB workshop.
+
+Thanks to Kristian Larsson for the comments.
