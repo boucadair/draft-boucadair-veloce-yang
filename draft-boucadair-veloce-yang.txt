@@ -92,8 +92,8 @@ Table of Contents
    The following procedure is followed when a WG adopts (a document
    with) a YANG module:
 
-   *  A new repository is created following the procedure in Section 3.2
-      of [RFC8874].
+   *  A new repository MUST be created by the WG Chairs following the
+      procedure in Section 3.2 of [RFC8874].
 
    *  Contributing methods are those defined in Section 4 of [RFC8874].
 
