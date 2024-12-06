@@ -1,6 +1,6 @@
-# TODO - Your title
+# YANG deVELpment PrOCEss & maintenance (VELOCE)
 
-This is the working area for the individual Internet-Draft, "TODO - Your title".
+This is the working area for the individual Internet-Draft, "YANG deVELpment PrOCEss & maintenance (VELOCE)".
 
 * [Editor's Copy](https://boucadair.github.io/draft-boucadair-veloce-yang/#go.draft-boucadair-veloce-yang.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-boucadair-veloce-yang)
