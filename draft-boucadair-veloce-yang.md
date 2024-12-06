@@ -12,9 +12,7 @@ v: 3
 # area: OPS
 # workgroup: VELOCE
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - quick but well YANG modules
 
 author:
  -
@@ -51,7 +49,7 @@ The following procedure is followed when a WG adopts (a document with) a YANG mo
 * Contributing methods to YANG module are those defined in {{Section 4 of !RFC8874}}.
 * The WG Chairs MUST seek in a timely manner after the adoption of the document for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
 * The YANG module MUST NOT be inserted in the document; instead a link to the Github repository MUST be included.
-* Bis versions of the innitila RFC MAY be considered, to document major changes or their rationale.
+* Bis versions of the initial RFC MAY be considered, to document major changes or their rationale.
 
 # Security Considerations
 
