@@ -116,7 +116,7 @@ Table of Contents
       [RFC8874].
 
    *  The WG Chairs MUST seek in a timely manner after the adoption of
-      the document for the publication of an RFC that describes the
+      the YANG module for the publication of an RFC that describes the
       initial module objectives and, more importantly, registers the URI
       in the "ns" subregistry within the "IETF XML Registry" [RFC3688]
       and the YANG module in the "YANG Module Names" subregistry
