@@ -70,8 +70,8 @@ Table of Contents
 
 1.  Introduction
 
-   RFCs are not be suited for documenting YANG modules.  However,
-   implementers/vendors are looking for reference models and
+   RFCs are not suited for documenting and maintaining YANG modules.
+   However, implementers/vendors are looking for reference models and
    sufficiently stable models to refer to.  To that aim, this document
    proposes a new approach for documenting IETF-endorsed YANG modules.
 
