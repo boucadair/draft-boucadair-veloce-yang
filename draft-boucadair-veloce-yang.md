@@ -1,6 +1,6 @@
 ---
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "YANG deVELpment PrOCEss & maintenance (VELOCE)"
+abbrev: "VELOCE"
 category: info
 
 docname: draft-boucadair-veloce-yang-latest
@@ -29,34 +29,38 @@ informative:
 
 --- abstract
 
-TODO Abstract
-
+This document describes a YANG deVELpment PrOCEss & maintenance (VELOCE) that is more suitable for the development of YANG modules within the IETF.
 
 --- middle
 
 # Introduction
 
-Charter a WG for YANG deVELpment PrOCEss & maintenance (VELOCE) with the aim to produce good but quick models: RFCs might not be suited for documenting YANG modules. However, implementers/vendors are looking for “reference models” and “sufficiently stable models”. An hybrid approach should be investigated for documenting IETF-endorsed YANG modules, such as considering an RFC to describe the initial module sketch and objectives, an official IETF repository for maintaining intermediate YANG versions, a process to release stable YANG modules versions. For example, the WG may build on RFC8874 and document YANG-related process to manage YANG modules using resources such as GitHub. The procedure for when to bump revisions, whether/when mirror in an RFC, and other similar logistic matters will be documented as well.
-
+RFCs are not be suited for documenting YANG modules. However, implementers/vendors are looking for reference models and sufficiently stable models to refer to. To that aim, this document proposes a new approach for documenting IETF-endorsed YANG modules.
 
 # Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
 
+# VELOCE Procedure
+
+The following procedure is followed when a WG adopts (a document with) a YANG module:
+
+* A new repository is created following the procedure in {{Section 3.2 of !RFC8874}}.
+* Contributing methods are those defined in {{Section 4 of !RFC8874}}.
+* The WG Chairs MUST seek in a timely manner after the adoption of the document for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
+* The YANG module MUST NOT be inserted in the document; instead a link to the Github repository MUST be included.
 
 # Security Considerations
 
-TODO Security
-
+The same considerations discussed in {{Section 10 of !RFC8874}} apply here.
 
 # IANA Considerations
 
 This document has no IANA actions.
-
 
 --- back
 
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+This draft is triggered by the discussion in NEMOPS IAB workshop.
