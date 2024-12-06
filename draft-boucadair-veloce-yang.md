@@ -33,7 +33,7 @@ This document describes a YANG deVELpment PrOCEss & maintenance (VELOCE) that is
 
 # Introduction
 
-RFCs are not be suited for documenting YANG modules. However, implementers/vendors are looking for reference models and sufficiently stable models to refer to. To that aim, this document proposes a new approach for documenting IETF-endorsed YANG modules.
+RFCs are not suited for documenting and maintaining YANG modules. However, implementers/vendors are looking for reference models and sufficiently stable models to refer to. To that aim, this document proposes a new approach for documenting IETF-endorsed YANG modules.
 
 Guidance for writing YANG modules are discussed in {{!I-D.ietf-netmod-rfc8407bis}}. Guidelines related to code components ({{Section 3.2 of !I-D.ietf-netmod-rfc8407bis}}) or citations to references listed in the YANG module do not apply for VELOCE.
 
