@@ -9,8 +9,8 @@ number:
 date:
 consensus: true
 v: 3
-area: OPS
-workgroup: VELOCE
+# area: OPS
+# workgroup: VELOCE
 keyword:
  - next generation
  - unicorn
