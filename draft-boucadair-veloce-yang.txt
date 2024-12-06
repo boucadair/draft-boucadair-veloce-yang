@@ -78,7 +78,7 @@ Table of Contents
    Guidance for writing YANG modules are discussed in
    [I-D.ietf-netmod-rfc8407bis].  Guidelines related to code components
    (Section 3.2 of [I-D.ietf-netmod-rfc8407bis]) or citations to
-   references listed in the YANG module.
+   references listed in the YANG module do not apply for VELOCE.
 
    This document mainly focuses on IETF modules.  Note that
    [I-D.ietf-netmod-rfc8407bis] includes provisons for IANA-maintained
