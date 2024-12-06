@@ -75,6 +75,10 @@ Table of Contents
    sufficiently stable models to refer to.  To that aim, this document
    proposes a new approach for documenting IETF-endorsed YANG modules.
 
+   Guidance for writing YANG modules are discussed in
+   [I-D.ietf-netmod-rfc8407bis].  All these guidelines apply expect
+   those related to narrative text.
+
 2.  Conventions and Definitions
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
@@ -115,6 +119,14 @@ Table of Contents
 6.  References
 
 6.1.  Normative References
+
+   [I-D.ietf-netmod-rfc8407bis]
+              Bierman, A., Boucadair, M., and Q. Wu, "Guidelines for
+              Authors and Reviewers of Documents Containing YANG Data
+              Models", Work in Progress, Internet-Draft, draft-ietf-
+              netmod-rfc8407bis-21, 13 November 2024,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-netmod-
+              rfc8407bis-21>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
