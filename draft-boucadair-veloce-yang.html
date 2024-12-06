@@ -1176,6 +1176,13 @@ svg :is([fill="white"], [fill^="#fff"]) {
       </h2>
 <p id="section-1-1">RFCs are not be suited for documenting YANG modules. However, implementers/vendors are looking for reference models and sufficiently stable models to refer to. To that aim, this document proposes a new approach for documenting IETF-endorsed YANG modules.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <p id="section-1-2">Guidance for writing  YANG modules are discussed in <span>[<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span>. All these guidelines apply expect those related to narrative text.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">This document mainly focuses on IETF modules. Note that <span>[<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span> includes provisons for IANA-maintained modules to not be included in RFCs:<a href="#section-1-3" class="pilcrow">¶</a></p>
+<blockquote id="section-1-4">
+        <p id="section-1-4.1">Designers of IANA-maintained modules <span class="bcp14">MAY</span> supply the full initial
+   version of the module in a specification document that registers the
+   module or only a script to be used (including by IANA) for generating
+   the module (e.g., an XSLT stylesheet as in Appendix A of [RFC9108]).<a href="#section-1-4.1" class="pilcrow">¶</a></p>
+</blockquote>
 </section>
 </div>
 <div id="conventions-and-definitions">
@@ -1194,13 +1201,13 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
       <h2 id="name-veloce-procedure">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-veloce-procedure" class="section-name selfRef">VELOCE Procedure</a>
       </h2>
-<p id="section-3-1">The following procedure is followed when a WG adopts (a document with) a YANG module:<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">The following procedure is followed when a WG adopts a YANG module:<a href="#section-3-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3-2.1">
-          <p id="section-3-2.1.1">A new repository <span class="bcp14">MUST</span> be created by the WG Chairs following the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-3.2" class="relref">Section 3.2</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> to maintain the YANG Module, with the apprpriate CI/CD YANG validation in place.<a href="#section-3-2.1.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.1.1">A new repository <span class="bcp14">MUST</span> be created by the WG Chairs following the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-3.2" class="relref">Section 3.2</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> to maintain the YANG Module, with the apprpriate CI/CD YANG validation in place. Other administrative polices are defined in <span>[<a href="#RFC8875" class="cite xref">RFC8875</a>]</span>. The same procedure for managing WG documents (e.g., assign editors) applies for managing YANG modules (<span><a href="https://rfc-editor.org/rfc/rfc2418#section-6.1" class="relref">Section 6.1</a> of [<a href="#RFC2418" class="cite xref">RFC2418</a>]</span>). Refer also to <span><a href="https://rfc-editor.org/rfc/rfc8874#section-3.3" class="relref">Section 3.3</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> for considerations related to granting WG participants write and administrators right.<a href="#section-3-2.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-3-2.2">
-          <p id="section-3-2.2.1">Contributing methods to YANG module are those defined in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-4" class="relref">Section 4</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span>.<a href="#section-3-2.2.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.2.1">Contributing methods to YANG module (including issues handling andd merge procedure) are similar to those defined in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-4" class="relref">Section 4</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span>.<a href="#section-3-2.2.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-3-2.3">
           <p id="section-3-2.3.1">The WG Chairs <span class="bcp14">MUST</span> seek in a timely manner after the adoption of the document for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" <span>[<a href="#RFC3688" class="cite xref">RFC3688</a>]</span> and the YANG module in the "YANG Module Names" subregistry <span>[<a href="#RFC6020" class="cite xref">RFC6020</a>]</span> within the "YANG Parameters" registry.<a href="#section-3-2.3.1" class="pilcrow">¶</a></p>
@@ -1209,7 +1216,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
           <p id="section-3-2.4.1">The YANG module <span class="bcp14">MUST NOT</span> be inserted in the document; instead a link to the Github repository <span class="bcp14">MUST</span> be included.<a href="#section-3-2.4.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-3-2.5">
-          <p id="section-3-2.5.1">Bis versions of the initial RFC <span class="bcp14">MAY</span> be considered, to document major changes or their rationale.<a href="#section-3-2.5.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.5.1">Bis versions of the initial RFC <span class="bcp14">MAY</span> be considered to document major changes or their rationale. Such a decision is left to the WG Chairs.<a href="#section-3-2.5.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -1249,13 +1256,21 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
         <dd>
 <span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="RFC2418">[RFC2418]</dt>
+        <dd>
+<span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"IETF Working Group Guidelines and Procedures"</span>, <span class="seriesInfo">BCP 25</span>, <span class="seriesInfo">RFC 2418</span>, <span class="seriesInfo">DOI 10.17487/RFC2418</span>, <time datetime="1998-09" class="refDate">September 1998</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc2418">https://www.rfc-editor.org/rfc/rfc2418</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="RFC8174">[RFC8174]</dt>
         <dd>
 <span class="refAuthor">Leiba, B.</span>, <span class="refTitle">"Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 8174</span>, <span class="seriesInfo">DOI 10.17487/RFC8174</span>, <time datetime="2017-05" class="refDate">May 2017</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8874">[RFC8874]</dt>
-      <dd>
+        <dd>
 <span class="refAuthor">Thomson, M.</span> and <span class="refAuthor">B. Stark</span>, <span class="refTitle">"Working Group GitHub Usage Guidance"</span>, <span class="seriesInfo">RFC 8874</span>, <span class="seriesInfo">DOI 10.17487/RFC8874</span>, <time datetime="2020-08" class="refDate">August 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8874">https://www.rfc-editor.org/rfc/rfc8874</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC8875">[RFC8875]</dt>
+      <dd>
+<span class="refAuthor">Cooper, A.</span> and <span class="refAuthor">P. Hoffman</span>, <span class="refTitle">"Working Group GitHub Administration"</span>, <span class="seriesInfo">RFC 8875</span>, <span class="seriesInfo">DOI 10.17487/RFC8875</span>, <time datetime="2020-08" class="refDate">August 2020</time>, <span>&lt;<a href="https://www.rfc-editor.org/rfc/rfc8875">https://www.rfc-editor.org/rfc/rfc8875</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 </dl>
 </section>
