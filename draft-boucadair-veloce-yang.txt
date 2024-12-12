@@ -130,7 +130,9 @@ Table of Contents
 
          Unless we update these rules as well, the publication of the
          initial RFC is required per Section 14 of [RFC6020], especially
-         the following: "There are no initial assignments.
+         the following:
+
+         "There are no initial assignments.
 
          For allocation, RFC publication is required"
 
