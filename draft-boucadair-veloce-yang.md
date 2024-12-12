@@ -53,9 +53,20 @@ This document mainly focuses on IETF modules. Note that {{I-D.ietf-netmod-rfc840
 
 The following procedure is followed when a WG adopts a YANG module:
 
-* A new repository MUST be created by the WG Chairs following the procedure in {{Section 3.2 of !RFC8874}} to maintain the YANG Module, with the appropriate CI/CD YANG validation in place. Other administrative polices are defined in {{!RFC8875}}. The same procedure for managing WG documents (e.g., assign editors) applies for managing YANG modules ({{Section 6.1 of !RFC2418}}). Refer also to {{Section 3.3 of !RFC8874}} for considerations related to granting WG participants write and administrators right.
+* A new repository MUST be created by the WG Chairs following the procedure in {{Section 3.2 of !RFC8874}} to maintain the YANG Module, with the appropriate CI/CD YANG validation in place.
+   + The same procedure for managing WG documents (e.g., assign editors) applies for managing YANG modules ({{Section 6.1 of !RFC2418}}).
+   + Refer also to {{Section 3.3 of !RFC8874}} for considerations related to granting WG participants write and administrators right.
+   + Other administrative policies are defined in {{!RFC8875}}.
 * Contributing methods to YANG module (including issues handling andd merge procedure) are similar to those defined in {{Section 4 of !RFC8874}}. A procedure to assessing consensus is discussed in {{Section 7 of !RFC8874}}.
-* The WG MUST seek in a timely manner after the adoption of the YANG module for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
+* The WG (WG Chairs) MUST seek in a timely manner after the adoption of the YANG module for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
+
+     > Unless we update these rules as well, the publication of the initial RFC is required per {{Section 14 of !RFC6020}}, especially the following:
+
+     {: quote}
+     >  There are no initial assignments.
+     >
+     >   For allocation, RFC publication is required
+
 * The YANG module MUST NOT be inserted in the document; instead a link to the above repository MUST be included.
 * Bis versions of the initial RFC MAY be considered to document major changes and/or their rationale. Such a decision is left to the WG.
 
