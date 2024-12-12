@@ -4,8 +4,8 @@
 
 Network Working Group                                       M. Boucadair
 Internet-Draft                                                    Orange
-Intended status: Informational                           6 December 2024
-Expires: 9 June 2025
+Intended status: Informational                          12 December 2024
+Expires: 15 June 2025
 
 
              YANG deVELpment PrOCEss & maintenance (VELOCE)
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 9 June 2025.
+   This Internet-Draft will expire on 15 June 2025.
 
 Copyright Notice
 
@@ -104,24 +104,35 @@ Table of Contents
 
    *  A new repository MUST be created by the WG Chairs following the
       procedure in Section 3.2 of [RFC8874] to maintain the YANG Module,
-      with the appropriate CI/CD YANG validation in place.  Other
-      administrative polices are defined in [RFC8875].  The same
-      procedure for managing WG documents (e.g., assign editors) applies
-      for managing YANG modules (Section 6.1 of [RFC2418]).  Refer also
-      to Section 3.3 of [RFC8874] for considerations related to granting
-      WG participants write and administrators right.
+      with the appropriate CI/CD YANG validation in place.
+
+      -  The same procedure for managing WG documents (e.g., assign
+         editors) applies for managing YANG modules (Section 6.1 of
+         [RFC2418]).
+
+      -  Refer also to Section 3.3 of [RFC8874] for considerations
+         related to granting WG participants write and administrators
+         right.
+
+      -  Other administrative policies are defined in [RFC8875].
 
    *  Contributing methods to YANG module (including issues handling
       andd merge procedure) are similar to those defined in Section 4 of
       [RFC8874].  A procedure to assessing consensus is discussed in
       Section 7 of [RFC8874].
 
-   *  The WG MUST seek in a timely manner after the adoption of the YANG
-      module for the publication of an RFC that describes the initial
-      module objectives and, more importantly, registers the URI in the
-      "ns" subregistry within the "IETF XML Registry" [RFC3688] and the
-      YANG module in the "YANG Module Names" subregistry [RFC6020]
-      within the "YANG Parameters" registry.
+   *  The WG (WG Chairs) MUST seek in a timely manner after the adoption
+      of the YANG module for the publication of an RFC that describes
+      the initial module objectives and, more importantly, registers the
+      URI in the "ns" subregistry within the "IETF XML Registry"
+      [RFC3688] and the YANG module in the "YANG Module Names"
+      subregistry [RFC6020] within the "YANG Parameters" registry.
+
+         Unless we update these rules as well, the publication of the
+         initial RFC is required per Section 14 of [RFC6020], especially
+         the following: "There are no initial assignments.
+
+         For allocation, RFC publication is required"
 
    *  The YANG module MUST NOT be inserted in the document; instead a
       link to the above repository MUST be included.
@@ -160,6 +171,11 @@ Table of Contents
               Procedures", BCP 25, RFC 2418, DOI 10.17487/RFC2418,
               September 1998, <https://www.rfc-editor.org/rfc/rfc2418>.
 
+   [RFC6020]  Bjorklund, M., Ed., "YANG - A Data Modeling Language for
+              the Network Configuration Protocol (NETCONF)", RFC 6020,
+              DOI 10.17487/RFC6020, October 2010,
+              <https://www.rfc-editor.org/rfc/rfc6020>.
+
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
@@ -177,11 +193,6 @@ Table of Contents
    [RFC3688]  Mealling, M., "The IETF XML Registry", BCP 81, RFC 3688,
               DOI 10.17487/RFC3688, January 2004,
               <https://www.rfc-editor.org/rfc/rfc3688>.
-
-   [RFC6020]  Bjorklund, M., Ed., "YANG - A Data Modeling Language for
-              the Network Configuration Protocol (NETCONF)", RFC 6020,
-              DOI 10.17487/RFC6020, October 2010,
-              <https://www.rfc-editor.org/rfc/rfc6020>.
 
 Acknowledgments
 
