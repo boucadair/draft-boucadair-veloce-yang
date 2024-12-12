@@ -61,6 +61,7 @@ The following procedure is followed when a WG adopts a YANG module:
 * The WG (WG Chairs) MUST seek in a timely manner after the adoption of the YANG module for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
 
      > Unless we update these rules as well, the publication of the initial RFC is required per {{Section 14 of !RFC6020}}, especially the following:
+     >
      >  "There are no initial assignments.
      >
      >   For allocation, RFC publication is required"
