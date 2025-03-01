@@ -57,6 +57,7 @@ The following procedure is followed when a WG adopts a YANG module:
    + The same procedure for managing WG documents (e.g., assign editors) applies for managing YANG modules ({{Section 6.1 of !RFC2418}}).
    + Refer also to {{Section 3.3 of !RFC8874}} for considerations related to granting WG participants write and administrators right.
    + Other administrative policies are defined in {{!RFC8875}}.
+   + A release tagging mechanism should be defined to track the intermediate versions referenced by WG I-Ds and by the RFC, once published.
 * Contributing methods to YANG module (including issues handling andd merge procedure) are similar to those defined in {{Section 4 of !RFC8874}}. A procedure to assessing consensus is discussed in {{Section 7 of !RFC8874}}.
 * The WG (WG Chairs) MUST seek in a timely manner after the adoption of the YANG module for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" {{?RFC3688}} and the YANG module in the "YANG Module Names" subregistry {{?RFC6020}} within the "YANG Parameters" registry.
 
@@ -67,7 +68,7 @@ The following procedure is followed when a WG adopts a YANG module:
      >   For allocation, RFC publication is required"
 
 * The YANG module MUST NOT be inserted in the document; instead a link to the above repository MUST be included.
-* Bis versions of the initial RFC MAY be considered to document major changes and/or their rationale. Such a decision is left to the WG.
+* Bis versions of the initial RFC MAY be considered to document major changes and their rationale. Such a decision is left to the WG. The RFC update is scoped to the narrative part describing the updates.
 
 # Security Considerations
 
@@ -84,4 +85,4 @@ This document has no IANA actions.
 
 This draft is triggered by the discussion in NEMOPS IAB workshop.
 
-Thanks to Kristian Larsson for the comments.
+Thanks to Kristian Larsson and Italo Busi for the comments.
