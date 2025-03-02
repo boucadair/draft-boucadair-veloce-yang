@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-02-27T01:48:25.519751+00:00",
+  "timestamp": "2025-03-02T01:53:39.449093+00:00",
   "repo": "boucadair/draft-boucadair-veloce-yang",
   "labels": [
     {
@@ -49,6 +49,23 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDONZzw5s6sLt_k",
+      "title": "Comments from Italo",
+      "url": "https://github.com/boucadair/draft-boucadair-veloce-yang/issues/1",
+      "state": "OPEN",
+      "author": "boucadair",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "I have also some additional comments:\n \n\u2022\tI think that some release tagging mechanism needs to be defined to track the draft versions referenced by WG I-Ds and by the RFC, once published\n\u2022\tWhat should be the date of the YANG model in github? The same date as when the RFC has been published?\n\u2022\tWhich process can be followed to update an existing YANG model?\n \nThe draft mention the -bis RFC as an option but, IMHO, some RFC update could also be useful when there is the need for a small/quick update. The RFC update can just provide the narrative part describing the updates and github shall ensure that all the reviews on the YANG module are limited to the code which is updated and not the whole module\n \nUnfortunately I was not able to join the IAB workshop due to a conflict with an ITU-T meeting but we have to be careful not to lose consensus nor quality in pursuing for a faster development process\n \nIMHO, moving the YANG code outside the RFC is not reducing the efforts nor the development time for a new or a -bis RFC (for the same consensus and quality levels) but it would help being able to have a faster process for small/quick updates. A small/quick update can also be done in an RFC defining a new  module (this would be quite common for the -types YANG modules)\n",
+      "createdAt": "2025-03-01T09:10:32Z",
+      "updatedAt": "2025-03-01T09:10:32Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": []
 }
