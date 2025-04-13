@@ -69,9 +69,19 @@ The following procedure is followed when a WG adopts a YANG module:
 
 # IETF-hosted Repository {#sec-rep}
 
-It is RECOMMENDED that IETF self-hosted repositories are used. Integration using third-party hosted repositories MAY be used for experimentation purposes. 
+It is RECOMMENDED that IETF self-hosted repositories are used. Integration using third-party hosted repositories MAY be used for experimentation purposes.
 
 > DISCUSSION: Include a recommendation about the hosting. IANA or some IETF gitlab are examples of self-hosting. Example of third-part hosted facility is GitHub.
+
+# Operational Considerations
+
+The VELOCE approach is meant to address some of operational issues encountered using current YANG development approach within the IETF. Specification, VELOCE ambitions to:
+
+* Ease integration for operators by providing readily-available YANG code in a well-identified location.
+* Encourage an iterative approach that would fit most of operators needs, rather than waiting for a "perfect" version that solves every deployment case.
+* Catalyst to produce fully-validated modules in a timely manner.
+* Ease reuse/leveraging by other organizations and hopefully avoid redundant efforts.
+* Welcome contributors from the operators community who are more familiar with software development, not only with specification development.
 
 # Security Considerations
 
