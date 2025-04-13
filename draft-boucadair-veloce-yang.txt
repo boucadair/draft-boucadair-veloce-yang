@@ -4,8 +4,8 @@
 
 Network Working Group                                       M. Boucadair
 Internet-Draft                                                    Orange
-Intended status: Informational                              1 March 2025
-Expires: 2 September 2025
+Intended status: Standards Track                           13 April 2025
+Expires: 15 October 2025
 
 
              YANG deVELpment PrOCEss & maintenance (VELOCE)
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 September 2025.
+   This Internet-Draft will expire on 15 October 2025.
 
 Copyright Notice
 
@@ -60,11 +60,13 @@ Table of Contents
    1.  Introduction
    2.  Conventions and Definitions
    3.  VELOCE Procedure
-   4.  Security Considerations
-   5.  IANA Considerations
-   6.  References
-     6.1.  Normative References
-     6.2.  Informative References
+   4.  IETF-hosted Repository
+   5.  Operational Considerations
+   6.  Security Considerations
+   7.  IANA Considerations
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
    Acknowledgments
    Author's Address
 
@@ -84,11 +86,14 @@ Table of Contents
    [I-D.ietf-netmod-rfc8407bis] includes provisons for IANA-maintained
    modules to not be included in RFCs:
 
-   |  Designers of IANA-maintained modules MAY supply the full initial
-   |  version of the module in a specification document that registers
-   |  the module or only a script to be used (including by IANA) for
-   |  generating the module (e.g., an XSLT stylesheet as in Appendix A
-   |  of [RFC9108]).
+   |  The authors MUST include a note to the RFC Editor requesting that
+   |  the appendix be removed before publication as RFC and that RFC
+   |  IIII is replaced with the RFC number that is assigned to the
+   |  document.  Initial versions of IANA-maintained modules that are
+   |  published in RFCs may be misused despite the appropriate language
+   |  to refer to the IANA registry to retrieve the up-to-date module.
+   |  This is problematic for interoperability, e.g., when values are
+   |  deprecated or are associated with a new meaning.
 
 2.  Conventions and Definitions
 
@@ -102,9 +107,10 @@ Table of Contents
 
    The following procedure is followed when a WG adopts a YANG module:
 
-   *  A new repository MUST be created by the WG Chairs following the
-      procedure in Section 3.2 of [RFC8874] to maintain the YANG Module,
-      with the appropriate CI/CD YANG validation in place.
+   *  A new repository (Section 4) MUST be created by the WG Chairs
+      following the procedure in Section 3.2 of [RFC8874] to maintain
+      the YANG Module, with the appropriate CI/CD YANG validation in
+      place.
 
       -  The same procedure for managing WG documents (e.g., assign
          editors) applies for managing YANG modules (Section 6.1 of
@@ -148,18 +154,50 @@ Table of Contents
       WG.  The RFC update is scoped to the narrative part describing the
       updates.
 
-4.  Security Considerations
+4.  IETF-hosted Repository
+
+   It is RECOMMENDED that IETF self-hosted repositories are used.
+   Integration using third-party hosted repositories MAY be used for
+   experimentation purposes.
+
+      DISCUSSION: Include a recommendation about the hosting.  IANA or
+      some IETF gitlab are examples of self-hosting.  Example of third-
+      part hosted facility is GitHub.
+
+5.  Operational Considerations
+
+   The VELOCE approach is meant to address some of operational issues
+   encountered using current YANG development approach within the IETF.
+   Specification, VELOCE ambitions to:
+
+   *  Ease integration for operators by providing readily-available YANG
+      code in a well-identified location.
+
+   *  Encourage an iterative approach that would fit most of operators
+      needs, rather than waiting for a "perfect" version that solves
+      every deployment case.
+
+   *  Catalyst to produce fully-validated modules in a timely manner.
+
+   *  Ease reuse/leveraging by other organizations and hopefully avoid
+      redundant efforts.
+
+   *  Welcome contributors from the operators community who are more
+      familiar with software development, not only with specification
+      development.
+
+6.  Security Considerations
 
    The same considerations discussed in Section 10 of [RFC8874] apply
    here.
 
-5.  IANA Considerations
+7.  IANA Considerations
 
    This document has no IANA actions.
 
-6.  References
+8.  References
 
-6.1.  Normative References
+8.1.  Normative References
 
    [I-D.ietf-netmod-rfc8407bis]
               Bierman, A., Boucadair, M., and Q. Wu, "Guidelines for
@@ -195,7 +233,7 @@ Table of Contents
               Administration", RFC 8875, DOI 10.17487/RFC8875, August
               2020, <https://www.rfc-editor.org/rfc/rfc8875>.
 
-6.2.  Informative References
+8.2.  Informative References
 
    [RFC3688]  Mealling, M., "The IETF XML Registry", BCP 81, RFC 3688,
               DOI 10.17487/RFC3688, January 2004,
@@ -205,7 +243,8 @@ Acknowledgments
 
    This draft is triggered by the discussion in NEMOPS IAB workshop.
 
-   Thanks to Kristian Larsson and Italo Busi for the comments.
+   Thanks to Kristian Larsson, Italo Busi, and Michael Richardson for
+   the comments.
 
 Author's Address
 

@@ -9,18 +9,18 @@
 <meta content="
        This document describes a YANG deVELpment PrOCEss &amp; maintenance (VELOCE) that is more suitable for the development of YANG modules within the IETF. 
     " name="description">
-<meta content="xml2rfc 3.27.0" name="generator">
+<meta content="xml2rfc 3.28.1" name="generator">
 <meta content="quick but well YANG modules" name="keyword">
 <meta content="draft-boucadair-veloce-yang-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.27.0
+  xml2rfc 3.28.1
     Python 3.12.9
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
-    Jinja2 3.1.5
+    Jinja2 3.1.6
     lxml 5.3.0
-    platformdirs 4.3.6
+    platformdirs 4.3.7
     pycountry 24.6.1
     PyYAML 6.0.2
     requests 2.32.3
@@ -1044,11 +1044,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">VELOCE</td>
-<td class="right">March 2025</td>
+<td class="right">April 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Boucadair</td>
-<td class="center">Expires 2 September 2025</td>
+<td class="center">Expires 15 October 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1061,12 +1061,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-boucadair-veloce-yang-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-03-01" class="published">1 March 2025</time>
+<time datetime="2025-04-13" class="published">13 April 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
-<dd class="intended-status">Informational</dd>
+<dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-09-02">2 September 2025</time></dd>
+<dd class="expires"><time datetime="2025-10-15">15 October 2025</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1108,7 +1108,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 2 September 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 15 October 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1147,27 +1147,33 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.3.1" class="keepWithNext"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-veloce-procedure" class="internal xref">VELOCE Procedure</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-ietf-hosted-repository" class="internal xref">IETF-hosted Repository</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-operational-considerations" class="internal xref">Operational Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-references" class="internal xref">References</a></p>
-<ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.1">
-                <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="auto internal xref">6.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.2">
-                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="auto internal xref">6.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
+            <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-references" class="internal xref">References</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.1">
+                <p id="section-toc.1-1.8.2.1.1"><a href="#section-8.1" class="auto internal xref">8.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.2">
+                <p id="section-toc.1-1.8.2.2.1"><a href="#section-8.2" class="auto internal xref">8.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
+            <p id="section-toc.1-1.9.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
 </li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
+            <p id="section-toc.1-1.10.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
 </li>
         </ul>
 </nav>
@@ -1182,10 +1188,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="section-1-2">Guidance for writing YANG modules are discussed in <span>[<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span>. Guidelines related to code components (<span><a href="https://datatracker.ietf.org/doc/html/draft-ietf-netmod-rfc8407bis-22#section-3.2" class="relref">Section 3.2</a> of [<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span>) or citations to references listed in the YANG module do not apply for VELOCE.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">This document mainly focuses on IETF modules. Note that <span>[<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span> includes provisons for IANA-maintained modules to not be included in RFCs:<a href="#section-1-3" class="pilcrow">¶</a></p>
 <blockquote id="section-1-4">
-        <p id="section-1-4.1">Designers of IANA-maintained modules <span class="bcp14">MAY</span> supply the full initial
-   version of the module in a specification document that registers the
-   module or only a script to be used (including by IANA) for generating
-   the module (e.g., an XSLT stylesheet as in Appendix A of [RFC9108]).<a href="#section-1-4.1" class="pilcrow">¶</a></p>
+        <p id="section-1-4.1">The authors <span class="bcp14">MUST</span> include a note to the RFC Editor requesting that the appendix be removed before publication as RFC and that RFC IIII is replaced with the RFC number that is assigned to the document. Initial versions of IANA-maintained modules that are published in RFCs may be misused despite the appropriate language to refer to the IANA registry to retrieve the up-to-date module. This is problematic for interoperability, e.g., when values are deprecated or are associated with a new meaning.<a href="#section-1-4.1" class="pilcrow">¶</a></p>
 </blockquote>
 </section>
 </div>
@@ -1208,7 +1211,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <p id="section-3-1">The following procedure is followed when a WG adopts a YANG module:<a href="#section-3-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3-2.1">
-          <p id="section-3-2.1.1">A new repository <span class="bcp14">MUST</span> be created by the WG Chairs following the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-3.2" class="relref">Section 3.2</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> to maintain the YANG Module, with the appropriate CI/CD YANG validation in place.<a href="#section-3-2.1.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.1.1">A new repository (<a href="#sec-rep" class="auto internal xref">Section 4</a>) <span class="bcp14">MUST</span> be created by the WG Chairs following the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-3.2" class="relref">Section 3.2</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> to maintain the YANG Module, with the appropriate CI/CD YANG validation in place.<a href="#section-3-2.1.1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3-2.1.2.1">
               <p id="section-3-2.1.2.1.1">The same procedure for managing WG documents (e.g., assign editors) applies for managing YANG modules (<span><a href="https://rfc-editor.org/rfc/rfc2418#section-6.1" class="relref">Section 6.1</a> of [<a href="#RFC2418" class="cite xref">RFC2418</a>]</span>).<a href="#section-3-2.1.2.1.1" class="pilcrow">¶</a></p>
@@ -1246,31 +1249,69 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
       </ul>
 </section>
 </div>
-<div id="security-considerations">
+<div id="sec-rep">
 <section id="section-4">
-      <h2 id="name-security-considerations">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      <h2 id="name-ietf-hosted-repository">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-ietf-hosted-repository" class="section-name selfRef">IETF-hosted Repository</a>
       </h2>
-<p id="section-4-1">The same considerations discussed in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-10" class="relref">Section 10</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> apply here.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<p id="section-4-1">It is <span class="bcp14">RECOMMENDED</span> that IETF self-hosted repositories are used. Integration using third-party hosted repositories <span class="bcp14">MAY</span> be used for experimentation purposes.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<ul class="normal ulEmpty">
+<li class="normal ulEmpty" id="section-4-2.1">
+          <p id="section-4-2.1.1">DISCUSSION: Include a recommendation about the hosting. IANA or some IETF gitlab are examples of self-hosting. Example of third-part hosted facility is GitHub.<a href="#section-4-2.1.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+</section>
+</div>
+<div id="operational-considerations">
+<section id="section-5">
+      <h2 id="name-operational-considerations">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-operational-considerations" class="section-name selfRef">Operational Considerations</a>
+      </h2>
+<p id="section-5-1">The VELOCE approach is meant to address some of operational issues encountered using current YANG development approach within the IETF. Specification, VELOCE ambitions to:<a href="#section-5-1" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-5-2.1">
+          <p id="section-5-2.1.1">Ease integration for operators by providing readily-available YANG code in a well-identified location.<a href="#section-5-2.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-5-2.2">
+          <p id="section-5-2.2.1">Encourage an iterative approach that would fit most of operators needs, rather than waiting for a "perfect" version that solves every deployment case.<a href="#section-5-2.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-5-2.3">
+          <p id="section-5-2.3.1">Catalyst to produce fully-validated modules in a timely manner.<a href="#section-5-2.3.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-5-2.4">
+          <p id="section-5-2.4.1">Ease reuse/leveraging by other organizations and hopefully avoid redundant efforts.<a href="#section-5-2.4.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-5-2.5">
+          <p id="section-5-2.5.1">Welcome contributors from the operators community who are more familiar with software development, not only with specification development.<a href="#section-5-2.5.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+</section>
+</div>
+<div id="security-considerations">
+<section id="section-6">
+      <h2 id="name-security-considerations">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      </h2>
+<p id="section-6-1">The same considerations discussed in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-10" class="relref">Section 10</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> apply here.<a href="#section-6-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
-<section id="section-5">
+<section id="section-7">
       <h2 id="name-iana-considerations">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
-<p id="section-5-1">This document has no IANA actions.<a href="#section-5-1" class="pilcrow">¶</a></p>
+<p id="section-7-1">This document has no IANA actions.<a href="#section-7-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="sec-combined-references">
-<section id="section-6">
+<section id="section-8">
       <h2 id="name-references">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-references" class="section-name selfRef">References</a>
+<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-references" class="section-name selfRef">References</a>
       </h2>
 <div id="sec-normative-references">
-<section id="section-6.1">
+<section id="section-8.1">
         <h3 id="name-normative-references">
-<a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-8.1" class="section-number selfRef">8.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
 <dt id="I-D.ietf-netmod-rfc8407bis">[I-D.ietf-netmod-rfc8407bis]</dt>
@@ -1305,9 +1346,9 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 </section>
 </div>
 <div id="sec-informative-references">
-<section id="section-6.2">
+<section id="section-8.2">
         <h3 id="name-informative-references">
-<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+<a href="#section-8.2" class="section-number selfRef">8.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
         </h3>
 <dl class="references">
 <dt id="RFC3688">[RFC3688]</dt>
@@ -1325,7 +1366,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
 <p id="appendix-A-1">This draft is triggered by the discussion in NEMOPS IAB workshop.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
-<p id="appendix-A-2">Thanks to Kristian Larsson and Italo Busi for the comments.<a href="#appendix-A-2" class="pilcrow">¶</a></p>
+<p id="appendix-A-2">Thanks to Kristian Larsson, Italo Busi, and Michael Richardson for the comments.<a href="#appendix-A-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">
