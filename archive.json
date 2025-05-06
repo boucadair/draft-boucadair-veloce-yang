@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-05-04T02:08:59.208466+00:00",
+  "timestamp": "2025-05-06T02:00:18.295344+00:00",
   "repo": "boucadair/draft-boucadair-veloce-yang",
   "labels": [
     {
@@ -62,9 +62,17 @@
       "labels": [],
       "body": "I have also some additional comments:\n \n\u2022\tI think that some release tagging mechanism needs to be defined to track the draft versions referenced by WG I-Ds and by the RFC, once published\n\u2022\tWhat should be the date of the YANG model in github? The same date as when the RFC has been published?\n\u2022\tWhich process can be followed to update an existing YANG model?\n \nThe draft mention the -bis RFC as an option but, IMHO, some RFC update could also be useful when there is the need for a small/quick update. The RFC update can just provide the narrative part describing the updates and github shall ensure that all the reviews on the YANG module are limited to the code which is updated and not the whole module\n \nUnfortunately I was not able to join the IAB workshop due to a conflict with an ITU-T meeting but we have to be careful not to lose consensus nor quality in pursuing for a faster development process\n \nIMHO, moving the YANG code outside the RFC is not reducing the efforts nor the development time for a new or a -bis RFC (for the same consensus and quality levels) but it would help being able to have a faster process for small/quick updates. A small/quick update can also be done in an RFC defining a new  module (this would be quite common for the -types YANG modules)\n",
       "createdAt": "2025-03-01T09:10:32Z",
-      "updatedAt": "2025-03-01T09:10:32Z",
+      "updatedAt": "2025-05-05T12:26:25Z",
       "closedAt": null,
-      "comments": []
+      "comments": [
+        {
+          "author": "billwuqin",
+          "authorAssociation": "NONE",
+          "body": "I think we should focus on YANG data model related bis document. I am not sure we have RFC update case, do we?\nIf we just simply define extension to the base model, the existing RFC don't need to be updated? No? ",
+          "createdAt": "2025-05-05T12:26:24Z",
+          "updatedAt": "2025-05-05T12:26:24Z"
+        }
+      ]
     },
     {
       "number": 2,
@@ -83,5 +91,32 @@
       "comments": []
     }
   ],
-  "pulls": []
+  "pulls": [
+    {
+      "number": 3,
+      "id": "PR_kwDONZzw5s6U77AX",
+      "title": "A few editorial change",
+      "url": "https://github.com/boucadair/draft-boucadair-veloce-yang/pull/3",
+      "state": "OPEN",
+      "author": "billwuqin",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2025-05-05T13:15:41Z",
+      "updatedAt": "2025-05-05T13:15:42Z",
+      "baseRepository": "boucadair/draft-boucadair-veloce-yang",
+      "baseRefName": "main",
+      "baseRefOid": "4702bc288867f57a17058631336dcf33b0e208d1",
+      "headRepository": "billwuqin/draft-boucadair-veloce-yang",
+      "headRefName": "patch-1",
+      "headRefOid": "04c1a9ce357990cbbf05b6e7352b48e8aebd01c1",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
+    }
+  ]
 }
