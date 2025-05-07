@@ -7,14 +7,14 @@
 <title>YANG deVELpment PrOCEss &amp; maintenance (VELOCE)</title>
 <meta content="Mohamed Boucadair" name="author">
 <meta content="
-       This document describes a YANG deVELpment PrOCEss &amp; maintenance (VELOCE) that is more suitable for the development of YANG modules within the IETF. 
+       This document describes a YANG deVELpment PrOCEss &amp; maintenance (VELOCE) that is more suitable for the development of YANG modules or YANG modules update within the IETF. 
     " name="description">
 <meta content="xml2rfc 3.28.1" name="generator">
 <meta content="quick but well YANG modules" name="keyword">
 <meta content="draft-boucadair-veloce-yang-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.28.1
-    Python 3.12.9
+    Python 3.12.10
     ConfigArgParse 1.7
     google-i18n-address 3.1.1
     intervaltree 3.1.0
@@ -1044,11 +1044,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">VELOCE</td>
-<td class="right">April 2025</td>
+<td class="right">May 2025</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Boucadair</td>
-<td class="center">Expires 15 October 2025</td>
+<td class="center">Expires 8 November 2025</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1061,12 +1061,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-boucadair-veloce-yang-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2025-04-13" class="published">13 April 2025</time>
+<time datetime="2025-05-07" class="published">7 May 2025</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2025-10-15">15 October 2025</time></dd>
+<dd class="expires"><time datetime="2025-11-08">8 November 2025</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1079,7 +1079,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">YANG deVELpment PrOCEss &amp; maintenance (VELOCE)</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">This document describes a YANG deVELpment PrOCEss &amp; maintenance (VELOCE) that is more suitable for the development of YANG modules within the IETF.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">This document describes a YANG deVELpment PrOCEss &amp; maintenance (VELOCE) that is more suitable for the development of YANG modules or YANG modules update within the IETF.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-discussion-venues">
@@ -1108,7 +1108,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 15 October 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 8 November 2025.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1185,7 +1185,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
 <p id="section-1-1">RFCs are not suited for documenting and maintaining YANG modules. However, implementers/vendors are looking for reference models and sufficiently stable models to refer to. To that aim, this document proposes a new approach for documenting IETF-endorsed YANG modules.<a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">Guidance for writing YANG modules are discussed in <span>[<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span>. Guidelines related to code components (<span><a href="https://datatracker.ietf.org/doc/html/draft-ietf-netmod-rfc8407bis-22#section-3.2" class="relref">Section 3.2</a> of [<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span>) or citations to references listed in the YANG module do not apply for VELOCE.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-2">Guidance for writing YANG modules are discussed in <span>[<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span>. Guidelines related to code components (<span><a href="https://datatracker.ietf.org/doc/html/draft-ietf-netmod-rfc8407bis-25#section-3.2" class="relref">Section 3.2</a> of [<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span>) or citations to references listed in the YANG module do not apply for VELOCE.<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">This document mainly focuses on IETF modules. Note that <span>[<a href="#I-D.ietf-netmod-rfc8407bis" class="cite xref">I-D.ietf-netmod-rfc8407bis</a>]</span> includes provisons for IANA-maintained modules to not be included in RFCs:<a href="#section-1-3" class="pilcrow">¶</a></p>
 <blockquote id="section-1-4">
         <p id="section-1-4.1">The authors <span class="bcp14">MUST</span> include a note to the RFC Editor requesting that the appendix be removed before publication as RFC and that RFC IIII is replaced with the RFC number that is assigned to the document. Initial versions of IANA-maintained modules that are published in RFCs may be misused despite the appropriate language to refer to the IANA registry to retrieve the up-to-date module. This is problematic for interoperability, e.g., when values are deprecated or are associated with a new meaning.<a href="#section-1-4.1" class="pilcrow">¶</a></p>
@@ -1208,10 +1208,11 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
       <h2 id="name-veloce-procedure">
 <a href="#section-3" class="section-number selfRef">3. </a><a href="#name-veloce-procedure" class="section-name selfRef">VELOCE Procedure</a>
       </h2>
-<p id="section-3-1">The following procedure is followed when a WG adopts a YANG module:<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-1">The following procedure is followed when a WG adopts a new YANG module or update to an existing YANG module:<a href="#section-3-1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3-2.1">
-          <p id="section-3-2.1.1">A new repository (<a href="#sec-rep" class="auto internal xref">Section 4</a>) <span class="bcp14">MUST</span> be created by the WG Chairs following the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-3.2" class="relref">Section 3.2</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> to maintain the YANG Module, with the appropriate CI/CD YANG validation in place.<a href="#section-3-2.1.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.1.1">A new WG repository (<a href="#sec-rep" class="auto internal xref">Section 4</a>) <span class="bcp14">MUST</span> be created by the WG Chairs following the procedure in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-3.2" class="relref">Section 3.2</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span> to maintain the YANG Module, with the
+appropriate CI/CD YANG validation in place.<a href="#section-3-2.1.1" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-3-2.1.2.1">
               <p id="section-3-2.1.2.1.1">The same procedure for managing WG documents (e.g., assign editors) applies for managing YANG modules (<span><a href="https://rfc-editor.org/rfc/rfc2418#section-6.1" class="relref">Section 6.1</a> of [<a href="#RFC2418" class="cite xref">RFC2418</a>]</span>).<a href="#section-3-2.1.2.1.1" class="pilcrow">¶</a></p>
@@ -1228,10 +1229,13 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
           </ul>
 </li>
         <li class="normal" id="section-3-2.2">
-          <p id="section-3-2.2.1">Contributing methods to YANG module (including issues handling andd merge procedure) are similar to those defined in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-4" class="relref">Section 4</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span>. A procedure to assessing consensus is discussed in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-7" class="relref">Section 7</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span>.<a href="#section-3-2.2.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.2.1">Contributing methods to YANG module (including issues handling and merge procedure) are similar to those defined in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-4" class="relref">Section 4</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span>. A procedure to assessing
+consensus is discussed in <span><a href="https://rfc-editor.org/rfc/rfc8874#section-7" class="relref">Section 7</a> of [<a href="#RFC8874" class="cite xref">RFC8874</a>]</span>.<a href="#section-3-2.2.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-3-2.3">
-          <p id="section-3-2.3.1">The WG (WG Chairs) <span class="bcp14">MUST</span> seek in a timely manner after the adoption of the YANG module for the publication of an RFC that describes the initial module objectives and, more importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" <span>[<a href="#RFC3688" class="cite xref">RFC3688</a>]</span> and the YANG module in the "YANG Module Names" subregistry <span>[<a href="#RFC6020" class="cite xref">RFC6020</a>]</span> within the "YANG Parameters" registry.<a href="#section-3-2.3.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.3.1">The WG (WG Chairs) <span class="bcp14">MUST</span> seek in a timely manner after the adoption of the YANG module for the publication of an RFC that describes the initial module objectives and, more
+importantly, registers the URI in the "ns" subregistry within the "IETF XML Registry" <span>[<a href="#RFC3688" class="cite xref">RFC3688</a>]</span> and the YANG module in the "YANG Module Names" subregistry <span>[<a href="#RFC6020" class="cite xref">RFC6020</a>]</span>
+within the "YANG Parameters" registry.<a href="#section-3-2.3.1" class="pilcrow">¶</a></p>
 <ul class="normal ulEmpty">
 <li class="normal ulEmpty" id="section-3-2.3.2.1">
               <p id="section-3-2.3.2.1.1">Unless we update these rules as well, the publication of the initial RFC is required per <span><a href="https://rfc-editor.org/rfc/rfc6020#section-14" class="relref">Section 14</a> of [<a href="#RFC6020" class="cite xref">RFC6020</a>]</span>, especially the following:<a href="#section-3-2.3.2.1.1" class="pilcrow">¶</a></p>
@@ -1244,7 +1248,12 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
           <p id="section-3-2.4.1">The YANG module <span class="bcp14">MUST NOT</span> be inserted in the document; instead a link to the above repository <span class="bcp14">MUST</span> be included.<a href="#section-3-2.4.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="section-3-2.5">
-          <p id="section-3-2.5.1">Bis versions of the initial RFC <span class="bcp14">MAY</span> be considered to document major changes and their rationale. Such a decision is left to the WG. The RFC update is scoped to the narrative part describing the updates.<a href="#section-3-2.5.1" class="pilcrow">¶</a></p>
+          <p id="section-3-2.5.1">Bis versions of the initial RFC <span class="bcp14">MAY</span> be considered to document major changes and their rationale. Such a decision is left to the WG. The RFC update is scoped to the
+narrative part describing the updates.<a href="#section-3-2.5.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="section-3-2.6">
+          <p id="section-3-2.6.1">Bis versions of the initial RFC should be developed by the same WG which was responsible for producing the intial RFC. If the responsible WG concluded, the alternative WG
+should be consulted with the ADs.<a href="#section-3-2.6.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
@@ -1316,7 +1325,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <dl class="references">
 <dt id="I-D.ietf-netmod-rfc8407bis">[I-D.ietf-netmod-rfc8407bis]</dt>
         <dd>
-<span class="refAuthor">Bierman, A.</span>, <span class="refAuthor">Boucadair, M.</span>, and <span class="refAuthor">Q. Wu</span>, <span class="refTitle">"Guidelines for Authors and Reviewers of Documents Containing YANG Data Models"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-netmod-rfc8407bis-22</span>, <time datetime="2025-01-14" class="refDate">14 January 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-netmod-rfc8407bis-22">https://datatracker.ietf.org/doc/html/draft-ietf-netmod-rfc8407bis-22</a>&gt;</span>. </dd>
+<span class="refAuthor">Bierman, A.</span>, <span class="refAuthor">Boucadair, M.</span>, and <span class="refAuthor">Q. Wu</span>, <span class="refTitle">"Guidelines for Authors and Reviewers of Documents Containing YANG Data Models"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-ietf-netmod-rfc8407bis-25</span>, <time datetime="2025-05-05" class="refDate">5 May 2025</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-ietf-netmod-rfc8407bis-25">https://datatracker.ietf.org/doc/html/draft-ietf-netmod-rfc8407bis-25</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC2119">[RFC2119]</dt>
         <dd>
@@ -1366,7 +1375,7 @@ appear in all capitals, as shown here.<a href="#section-2-1" class="pilcrow">¶<
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
 <p id="appendix-A-1">This draft is triggered by the discussion in NEMOPS IAB workshop.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
-<p id="appendix-A-2">Thanks to Kristian Larsson, Italo Busi, and Michael Richardson for the comments.<a href="#appendix-A-2" class="pilcrow">¶</a></p>
+<p id="appendix-A-2">Thanks to Kristian Larsson, Italo Busi, Michael Richardson, and Qin Wu for the comments.<a href="#appendix-A-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">

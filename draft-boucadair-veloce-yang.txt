@@ -4,8 +4,8 @@
 
 Network Working Group                                       M. Boucadair
 Internet-Draft                                                    Orange
-Intended status: Standards Track                           13 April 2025
-Expires: 15 October 2025
+Intended status: Standards Track                              7 May 2025
+Expires: 8 November 2025
 
 
              YANG deVELpment PrOCEss & maintenance (VELOCE)
@@ -14,8 +14,8 @@ Expires: 15 October 2025
 Abstract
 
    This document describes a YANG deVELpment PrOCEss & maintenance
-   (VELOCE) that is more suitable for the development of YANG modules
-   within the IETF.
+   (VELOCE) that is more suitable for the development of YANG modules or
+   YANG modules update within the IETF.
 
 Discussion Venues
 
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 15 October 2025.
+   This Internet-Draft will expire on 8 November 2025.
 
 Copyright Notice
 
@@ -105,9 +105,10 @@ Table of Contents
 
 3.  VELOCE Procedure
 
-   The following procedure is followed when a WG adopts a YANG module:
+   The following procedure is followed when a WG adopts a new YANG
+   module or update to an existing YANG module:
 
-   *  A new repository (Section 4) MUST be created by the WG Chairs
+   *  A new WG repository (Section 4) MUST be created by the WG Chairs
       following the procedure in Section 3.2 of [RFC8874] to maintain
       the YANG Module, with the appropriate CI/CD YANG validation in
       place.
@@ -126,8 +127,8 @@ Table of Contents
          intermediate versions referenced by WG I-Ds and by the RFC,
          once published.
 
-   *  Contributing methods to YANG module (including issues handling
-      andd merge procedure) are similar to those defined in Section 4 of
+   *  Contributing methods to YANG module (including issues handling and
+      merge procedure) are similar to those defined in Section 4 of
       [RFC8874].  A procedure to assessing consensus is discussed in
       Section 7 of [RFC8874].
 
@@ -153,6 +154,11 @@ Table of Contents
       major changes and their rationale.  Such a decision is left to the
       WG.  The RFC update is scoped to the narrative part describing the
       updates.
+
+   *  Bis versions of the initial RFC should be developed by the same WG
+      which was responsible for producing the intial RFC.  If the
+      responsible WG concluded, the alternative WG should be consulted
+      with the ADs.
 
 4.  IETF-hosted Repository
 
@@ -203,9 +209,9 @@ Table of Contents
               Bierman, A., Boucadair, M., and Q. Wu, "Guidelines for
               Authors and Reviewers of Documents Containing YANG Data
               Models", Work in Progress, Internet-Draft, draft-ietf-
-              netmod-rfc8407bis-22, 14 January 2025,
+              netmod-rfc8407bis-25, 5 May 2025,
               <https://datatracker.ietf.org/doc/html/draft-ietf-netmod-
-              rfc8407bis-22>.
+              rfc8407bis-25>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -243,8 +249,8 @@ Acknowledgments
 
    This draft is triggered by the discussion in NEMOPS IAB workshop.
 
-   Thanks to Kristian Larsson, Italo Busi, and Michael Richardson for
-   the comments.
+   Thanks to Kristian Larsson, Italo Busi, Michael Richardson, and Qin
+   Wu for the comments.
 
 Author's Address
 
