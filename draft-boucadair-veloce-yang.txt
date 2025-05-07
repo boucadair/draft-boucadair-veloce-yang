@@ -108,7 +108,7 @@ Table of Contents
    The following procedure is followed when a WG adopts a new YANG
    module or update to an existing YANG module:
 
-   *  A new WG repository (Section 4) MUST be created by the WG Chairs
+   *  A new repository (Section 4) MUST be created by the WG Chairs
       following the procedure in Section 3.2 of [RFC8874] to maintain
       the YANG Module, with the appropriate CI/CD YANG validation in
       place.
