@@ -4,8 +4,8 @@
 
 Network Working Group                                       M. Boucadair
 Internet-Draft                                                    Orange
-Intended status: Standards Track                              7 May 2025
-Expires: 8 November 2025
+Intended status: Standards Track                       18 September 2025
+Expires: 22 March 2026
 
 
              YANG deVELpment PrOCEss & maintenance (VELOCE)
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 8 November 2025.
+   This Internet-Draft will expire on 22 March 2026.
 
 Copyright Notice
 
@@ -153,12 +153,17 @@ Table of Contents
    *  Bis versions of the initial RFC MAY be considered to document
       major changes and their rationale.  Such a decision is left to the
       WG.  The RFC update is scoped to the narrative part describing the
-      updates.
+      updates.  WGs may decide to maintain an adopted YANG module in the
+      IETF repository but never seek for an RFC publication of major
+      module revisions.
 
    *  Bis versions of the initial RFC should be developed by the same WG
       which was responsible for producing the intial RFC.  If the
       responsible WG concluded, the alternative WG should be consulted
       with the ADs.
+
+   *  All adopted IETF modules are also mirrored in a common IETF
+      repository.
 
 4.  IETF-hosted Repository
 
@@ -209,9 +214,9 @@ Table of Contents
               Bierman, A., Boucadair, M., and Q. Wu, "Guidelines for
               Authors and Reviewers of Documents Containing YANG Data
               Models", Work in Progress, Internet-Draft, draft-ietf-
-              netmod-rfc8407bis-25, 5 May 2025,
+              netmod-rfc8407bis-28, 5 June 2025,
               <https://datatracker.ietf.org/doc/html/draft-ietf-netmod-
-              rfc8407bis-25>.
+              rfc8407bis-28>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
