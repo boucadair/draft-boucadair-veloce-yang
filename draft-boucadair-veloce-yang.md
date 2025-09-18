@@ -70,9 +70,9 @@ The following procedure is followed when a WG adopts a new YANG module or update
 
 * The YANG module MUST NOT be inserted in the document; instead a link to the above repository MUST be included.
 * Bis versions of the initial RFC MAY be considered to document major changes and their rationale. Such a decision is left to the WG. The RFC update is scoped to the
-  narrative part describing the updates.
-* Bis versions of the initial RFC should be developed by the same WG which was responsible for producing the intial RFC. If the responsible WG concluded, the alternative WG
-  should be consulted with the ADs.
+  narrative part describing the updates. WGs may decide to  maintain an adopted YANG module in the IETF repository but never seek for an RFC publication of major module revisions.
+* Bis versions of the initial RFC should be developed by the same WG which was responsible for producing the intial RFC. If the responsible WG concluded, the alternative WG should be consulted with the ADs.
+* All adopted IETF modules are also mirrored in a common IETF repository.
 
 # IETF-hosted Repository {#sec-rep}
 
