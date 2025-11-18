@@ -23,7 +23,11 @@ author:
 normative:
 
 informative:
-
+  YANG-CICD:
+    title: "Internet-Draft with YANG Modules" Template Repository"
+    author:
+    date: false
+    target: https://github.com/IETF-OPS-AD/I-D-with-yang-template
 
 --- abstract
 
@@ -51,7 +55,7 @@ This document mainly focuses on IETF modules. Note that {{I-D.ietf-netmod-rfc840
 The following procedure is followed when a WG adopts a new YANG module or update to an existing YANG module:
 
 * A new repository ({{sec-rep}}) MUST be created by the WG Chairs following the procedure in {{Section 3.2 of !RFC8874}} to maintain the YANG Module, with the
-  appropriate CI/CD YANG validation in place.
+  appropriate CI/CD YANG validation in place (e.g., {{YANG-CICD}}).
    + The same procedure for managing WG documents (e.g., assign editors) applies for managing YANG modules ({{Section 6.1 of !RFC2418}}).
    + Refer also to {{Section 3.3 of !RFC8874}} for considerations related to granting WG participants write and administrators right.
    + Other administrative policies are defined in {{!RFC8875}}.
