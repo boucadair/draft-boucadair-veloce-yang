@@ -23,11 +23,11 @@ author:
 normative:
 
 informative:
-  YANG-CICD:
-    title: "Internet-Draft with YANG Modules" Template Repository"
-    author:
-    date: false
-    target: https://github.com/IETF-OPS-AD/I-D-with-yang-template
+
+   YANG-CICD:
+      title: Internet-Draft with YANG Modules" Template Repository
+      target: https://github.com/IETF-OPS-AD/I-D-with-yang-template
+      date: false
 
 --- abstract
 
