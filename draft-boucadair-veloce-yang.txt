@@ -4,8 +4,8 @@
 
 Network Working Group                                       M. Boucadair
 Internet-Draft                                                    Orange
-Intended status: Standards Track                       18 September 2025
-Expires: 22 March 2026
+Intended status: Standards Track                        18 November 2025
+Expires: 22 May 2026
 
 
              YANG deVELpment PrOCEss & maintenance (VELOCE)
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 March 2026.
+   This Internet-Draft will expire on 22 May 2026.
 
 Copyright Notice
 
@@ -111,7 +111,7 @@ Table of Contents
    *  A new repository (Section 4) MUST be created by the WG Chairs
       following the procedure in Section 3.2 of [RFC8874] to maintain
       the YANG Module, with the appropriate CI/CD YANG validation in
-      place.
+      place (e.g., [YANG-CICD]).
 
       -  The same procedure for managing WG documents (e.g., assign
          editors) applies for managing YANG modules (Section 6.1 of
@@ -249,6 +249,10 @@ Table of Contents
    [RFC3688]  Mealling, M., "The IETF XML Registry", BCP 81, RFC 3688,
               DOI 10.17487/RFC3688, January 2004,
               <https://www.rfc-editor.org/rfc/rfc3688>.
+
+   [YANG-CICD]
+              "Internet-Draft with YANG Modules" Template Repository",
+              <https://github.com/IETF-OPS-AD/I-D-with-yang-template>.
 
 Acknowledgments
 
